@@ -1,0 +1,41 @@
+
+.nav-container {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .nav {
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 0, 0, 0.5);
+  }
+  
+  .user-info {
+    background: linear-gradient(45deg, #b8e149, #45e5c3);
+    color: #fff;
+    overflow: hidden;
+    padding: 20px 15px 14px;
+  }
+
+  .router-container {
+    padding-top: 55px;
+  }
+  
+:host {
+
+    main {
+      flex: 1;
+      position: relative;
+    }
+  
+  
+  
+    ::-webkit-scrollbar {
+      width: 0px;
+      /* remove scrollbar space */
+      background: transparent;
+      /* optional: just make scrollbar invisible */
+    }
+  
+  }
+    
