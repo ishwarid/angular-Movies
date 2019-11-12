@@ -6,14 +6,16 @@ import {
   MatIconModule,
   MatSelectModule,
   MatNativeDateModule,
-  MatAutocompleteModule
+  MatAutocompleteModule,
 } from "@angular/material";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatSliderModule } from "@angular/material/slider";
 import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatInputModule } from "@angular/material/input";
-
+import {MatCardModule} from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   imports: [
     MatAutocompleteModule,
@@ -26,7 +28,10 @@ import { MatInputModule } from "@angular/material/input";
     MatSliderModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,
+    MatListModule,
+    MatButtonModule
   ],
   exports: [
     MatAutocompleteModule,
@@ -39,7 +44,10 @@ import { MatInputModule } from "@angular/material/input";
     MatSliderModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,
+    MatListModule,
+    MatButtonModule
   ]
 })
 export class CustomMaterialModule {}

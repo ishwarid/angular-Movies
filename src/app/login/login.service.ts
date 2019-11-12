@@ -2,13 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-export interface User {
-  id: number;
-  name: string;
-  language: string;
-  phone_number: string;
-  photo: string;
-}
+
 @Injectable()
 export class LoginService {
 
@@ -17,8 +11,8 @@ export class LoginService {
     headers: {
     }
   };
-  login( username: string, password: string ): Observable<User> {
-    return this.httpClient.get<User>("https://jsonplaceholder.typicode.com/users?username="+username,
+  login( username: string, password: string ): Observable<any> {
+    return this.httpClient.get<any>("https://jsonplaceholder.typicode.com/users?username="+username,
     {
       headers: this.options.headers,
     }

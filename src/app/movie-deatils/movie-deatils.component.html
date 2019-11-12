@@ -1,1 +1,44 @@
-<p>movie-deatils works!</p>
+<div class="mainDiv">
+  <div class="title">
+    Movie Details
+  </div>
+        <div class="row">
+                <div class="col-2">
+            
+                </div>
+                <div class="col-8">
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                          <div mat-card-avatar class="example-header-image"></div>
+                          <mat-card-title style="text-align: center">{{movieList.Title}}</mat-card-title>
+                          <mat-card-subtitle>{{movieList.Released}}</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="{{movieList.Poster}}" alt="{{movieList.Title}}">
+                        <mat-card-content style="min-height:150px;">
+                            <div class="ratings">
+                               <span><i class="fa fa-star-half-o" aria-hidden="true"></i>IMDB Rating: {{movieList.imdbRating}} </span>
+
+
+                               <span style="float:right;"> <i class="fa fa-thumbs-up" aria-hidden="true"></i>IMDB Votes: {{movieList.imdbVotes}} </span>
+                            </div>
+                            <br>
+                            <div>
+
+                                <span style="float:left"> Language: {{movieList.Language}} </span> 
+                                <span>Director:{{movieList.Director}},</span>
+                                <span style="float: right;">Actors:{{movieList.Actors}},</span>
+            
+                            </div>
+                          <p style="float:left">
+                           {{movieList.Plot}}
+                          </p>
+
+                         
+                        </mat-card-content>
+                        
+                      </mat-card>
+                </div>
+            </div>
+
+</div>
+

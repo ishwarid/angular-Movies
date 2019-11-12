@@ -16,6 +16,7 @@ import { StateService } from './sharedServices/state.service';
 import { LoginService } from './login/login.service';
 import { MovieDeatilsComponent } from './movie-deatils/movie-deatils.component';
 import { MovieService } from './home/movie.service';
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { MovieService } from './home/movie.service';
     ReactiveFormsModule,
     HttpClientModule,
     CustomMaterialModule,
+    AngularMultiSelectModule
    
   ],
   providers: [

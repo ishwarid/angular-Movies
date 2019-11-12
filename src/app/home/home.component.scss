@@ -1,18 +1,35 @@
+.search-width {
+  width: 100%;
+}
 
-.search-width{
-    width: 100%;
-  }
-  .searchDiv{
-    position: fixed; 
-    background: white;
-    z-index: 1024;
-    width: 100%; 
-    margin-top: 0px;
-    height: 100px; 
-    padding-top: 20px;
-    text-align: center;
-    
-  }
-  .input-group {
-    width: 95%;
-  }  
+.searchDiv {
+  position: fixed;
+  background: white;
+  z-index: 1024;
+  width: 100%;
+  margin-top: 0px;
+  height: 100px;
+  padding-top: 20px;
+  text-align: center;
+
+}
+
+.input-group {
+  width: 95%;
+}
+.input{
+  width: 100%
+}
+
+.container {
+  position: relative;
+  top: 120px;
+  width: 100%;
+}
+
+.centerDiv {
+  position: relative;
+  margin-left: 10%;
+  width:100%;
+  margin-top: 20%;
+}

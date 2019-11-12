@@ -28,10 +28,20 @@ export class LoginComponent implements OnInit {
       .login(this.form.value.username, this.form.value.password)
       .subscribe(
         data => {
-          console.log("*****************************", data)
+          console.log("******datatatat*******", data)
           
-          this.state.setData( data );
-          this.router.navigate([""]);
+          
+            
+          if(data.length > 0){
+            console.log("-------------------------------------")
+            this.state.setData( data );
+            this.router.navigate([""]);
+          
+          }else{
+            console.log("inside null")
+            this.error = "Failed to login, Username dosen't macthes";
+          }
+          
         },
         err => {
           this.error = "Failed to login, Username dosen't macthes";

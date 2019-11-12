@@ -9,8 +9,7 @@ import { HttpClient } from "@angular/common/http";
 export class StateService {
   private token;
   public data;
-
-
+  public movieObject:object;
   setData(data: any) {
 
     this.token = data[0].id;

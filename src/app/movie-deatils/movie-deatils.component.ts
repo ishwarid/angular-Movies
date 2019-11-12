@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StateService } from '../sharedServices/state.service';
 
 @Component({
   selector: 'app-movie-deatils',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movie-deatils.component.scss']
 })
 export class MovieDeatilsComponent implements OnInit {
-
-  constructor() { }
+  movieList:any;
+  constructor(public state: StateService) { }
 
   ngOnInit() {
+    this.movieList = this.state.movieObject;
+    console.log("this.movieList", this.movieList)
   }
 
 }
